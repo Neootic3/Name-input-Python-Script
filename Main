@@ -1,3 +1,4 @@
+print("Script made By: Neon \n")
 name = input("What is your username?\n")
 if len(name) == 0:
   print("You didn't enter a username")
