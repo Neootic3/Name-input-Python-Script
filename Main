@@ -1,0 +1,10 @@
+print("\033[92mScript by: Neon\033[0m")
+
+
+while True:
+  name = input("What is your name?" + '\n')
+  if len(name) <= 10:
+    print("hi,", name)
+    break
+  else:
+    print("Your name is too long, please enter a name with less or equal to 10 characters.")
