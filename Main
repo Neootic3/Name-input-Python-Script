@@ -1,10 +1,21 @@
-print("\033[92mScript by: Neon\033[0m")
-
-
-while True:
-  name = input("What is your name?" + '\n')
-  if len(name) <= 10:
-    print("hi,", name)
-    break
+name = input("What is your username?\n")
+if len(name) == 0:
+  print("You didn't enter a username")
+elif len(name) >= 10:
+  print("Your username is too long")
+elif name == "admin":
+  print("This username is not allowed")
+elif name == "1":
+  print("This username is not allowed")
+elif any(char.isdigit() for char in name):
+  print("Username cannot contain numbers")
+else:
+  password = input("What is your password?\n")
+  if len(password) == 0:
+    print("You didn't enter a password")
+  elif len(password) <= 5:
+    print("Your password is too short")
+  elif password == "password":
+    print("This password is not allowed")
   else:
-    print("Your name is too long, please enter a name with less or equal to 10 characters.")
+    print("Welcome " + name)
